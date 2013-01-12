@@ -1,5 +1,5 @@
 //
-//  main.m
+//  GearButton.h
 //  Feed The Mouse Level Editor
 //
 //  Created by Jason Ly on 2013-01-06.
@@ -8,9 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
+@interface GearButton : NSButtonCell
 {
- 
-
-    return NSApplicationMain(argc, (const char **)argv);
+    
 }
+- (IBAction)addGear:(id)pId;
+@end

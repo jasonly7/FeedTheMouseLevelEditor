@@ -1,16 +1,18 @@
 //
-//  main.m
+//  GearButton.m
 //  Feed The Mouse Level Editor
 //
 //  Created by Jason Ly on 2013-01-06.
 //  Copyright (c) 2013 Jason Ly. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "GearButton.h"
 
-int main(int argc, char *argv[])
+@implementation GearButton
+
+- (IBAction)addGear:(id)pId
 {
- 
 
-    return NSApplicationMain(argc, (const char **)argv);
+       NSLog(@"Hi there");
 }
+@end
