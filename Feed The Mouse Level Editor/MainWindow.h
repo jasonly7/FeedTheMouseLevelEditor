@@ -14,8 +14,10 @@
 {
     NSImage *image;
     float opacity;
-}
+    NSBezierPath *path;
 
+}
+- (NSPoint)randomPoint;
 @property (assign) float opacity;
 @property (strong) NSImage *image;
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5019EA2F16A622AE000BE7CA /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019EA2E16A622AE000BE7CA /* CustomScrollView.m */; };
 		5040D519169A0CBD00ABB956 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5040D518169A0CBD00ABB956 /* Cocoa.framework */; };
 		5040D523169A0CBD00ABB956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5040D521169A0CBD00ABB956 /* InfoPlist.strings */; };
 		5040D525169A0CBD00ABB956 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D524169A0CBD00ABB956 /* main.m */; };
@@ -83,6 +84,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5019EA2D16A622AE000BE7CA /* CustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomScrollView.h; path = Classes/CustomScrollView.h; sourceTree = "<group>"; };
+		5019EA2E16A622AE000BE7CA /* CustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomScrollView.m; path = Classes/CustomScrollView.m; sourceTree = "<group>"; };
 		5040D514169A0CBD00ABB956 /* Feed The Mouse Level Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feed The Mouse Level Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5040D518169A0CBD00ABB956 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5040D51B169A0CBD00ABB956 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -229,6 +232,8 @@
 				5040D52A169A0CBD00ABB956 /* AppDelegate.h */,
 				5040D52B169A0CBD00ABB956 /* AppDelegate.m */,
 				5040D52D169A0CBE00ABB956 /* MainMenu.xib */,
+				5019EA2D16A622AE000BE7CA /* CustomScrollView.h */,
+				5019EA2E16A622AE000BE7CA /* CustomScrollView.m */,
 				50CB1FD716A1B3E400310C4F /* MainWindow.h */,
 				50CB1FD816A1B3E400310C4F /* MainWindow.m */,
 				5040D51F169A0CBD00ABB956 /* Supporting Files */,
@@ -561,6 +566,7 @@
 				5040D52C169A0CBD00ABB956 /* AppDelegate.m in Sources */,
 				5040D553169A26FC00ABB956 /* GearButton.m in Sources */,
 				50CB1FD916A1B3E400310C4F /* MainWindow.m in Sources */,
+				5019EA2F16A622AE000BE7CA /* CustomScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
