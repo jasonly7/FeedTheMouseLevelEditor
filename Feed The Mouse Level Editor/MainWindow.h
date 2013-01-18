@@ -16,6 +16,7 @@
     float opacity;
     NSBezierPath *path;
     bool gear;
+    CGPoint pt;
 }
 - (NSPoint)randomPoint;
 - (void) addGear;

@@ -116,7 +116,8 @@
             imageRect.origin = CGPointMake(0,0);
             imageRect.size = [image size];
             NSRect drawingRect = imageRect;
-            drawingRect.origin = CGPointMake(100,600);
+            drawingRect.origin = pt;
+
             [image drawInRect:drawingRect
                      fromRect:imageRect
                     operation:NSCompositeSourceOver
@@ -147,5 +148,17 @@
 {
     opacity = x;
     [self setNeedsDisplay:YES];
+}
+
+- (void)mouseDown:(NSEvent *)theEvent
+{
+    NSPoint p = [theEvent locationInWindow];
+    pt = CGPointMake(p.x, p.y);
+}
+
+- (void)mouseDragged:(NSEvent *)theEvent
+{
+    NSPoint p = [theEvent locationInWindow];
+    pt = CGPointMake(p.x, p.y);
 }
 @end
