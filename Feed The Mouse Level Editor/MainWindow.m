@@ -116,6 +116,7 @@
             imageRect.origin = CGPointMake(0,0);
             imageRect.size = [image size];
             NSRect drawingRect = imageRect;
+            drawingRect.origin = CGPointMake(100,600);
             [image drawInRect:drawingRect
                      fromRect:imageRect
                     operation:NSCompositeSourceOver
