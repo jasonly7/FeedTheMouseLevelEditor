@@ -11,6 +11,31 @@
 
 @implementation MainWindow
 
+- (void) addGear
+{
+    gear = true;
+}
+- (void) drawGear
+{
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"gear_blue.png" ofType:nil]];
+    CIImage *ciImage = [[CIImage alloc] initWithContentsOfURL: url];
+    NSImageRep *imageRep = [[NSBitmapImageRep alloc] initWithCIImage:ciImage];
+    NSImage *gearImage = [[NSImage alloc] initWithSize:[imageRep size]];
+    [gearImage addRepresentation: imageRep];
+    [self setImage:gearImage];
+    [self setOpacity:1.0];
+    if (image) {
+        NSRect imageRect;
+        imageRect.origin = CGPointMake(0,0);
+        imageRect.size = [image size];
+        NSRect drawingRect = imageRect;
+        [image drawInRect:drawingRect
+                 fromRect:imageRect
+                operation:NSCompositeSourceOver
+                 fraction:opacity];
+    }
+
+}
 // randomPoint returns a random point inside the view
 - (NSPoint)randomPoint
 {
@@ -50,14 +75,7 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
     // Drawing code here.
-   /* NSRect bounds = [self bounds];
-	// Fill the view with green
-	[[NSColor greenColor] set];
-	[NSBezierPath fillRect: bounds];
-	// Draw the path in white
-	[[NSColor whiteColor] set];
-	//[path stroke];
-    NSView *superview = [_window contentView];*/
+
    /* NSRect frame = NSMakeRect(10,10,200,100);
     
 
@@ -84,6 +102,27 @@
                  fraction:opacity];
     }
     
+    if (gear)
+    {
+        NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"gear_blue.png" ofType:nil]];
+        CIImage *ciImage = [[CIImage alloc] initWithContentsOfURL: url];
+        NSImageRep *imageRep = [[NSBitmapImageRep alloc] initWithCIImage:ciImage];
+        NSImage *gearImage = [[NSImage alloc] initWithSize:[imageRep size]];
+        [gearImage addRepresentation: imageRep];
+        [self setImage:gearImage];
+        [self setOpacity:1.0];
+        if (image) {
+            NSRect imageRect;
+            imageRect.origin = CGPointMake(0,0);
+            imageRect.size = [image size];
+            NSRect drawingRect = imageRect;
+            [image drawInRect:drawingRect
+                     fromRect:imageRect
+                    operation:NSCompositeSourceOver
+                     fraction:opacity];
+        }
+    }
+
 }
 
 - (NSImage *)image
@@ -94,6 +133,7 @@
 - (void) setImage:(NSImage *)newImage
 {
     image = newImage;
+    
     [self setNeedsDisplay:YES];
 }
 

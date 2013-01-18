@@ -7,10 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MainWindow.h"
 
 @interface GearButton : NSButtonCell
 {
-    
+    MainWindow *mainWin;
 }
 - (IBAction)addGear:(id)pId;
+
+@property (nonatomic, retain) IBOutlet MainWindow *mainWin;
 @end

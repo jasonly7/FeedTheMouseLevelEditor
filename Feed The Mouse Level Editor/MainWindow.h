@@ -15,9 +15,11 @@
     NSImage *image;
     float opacity;
     NSBezierPath *path;
-
+    bool gear;
 }
 - (NSPoint)randomPoint;
+- (void) addGear;
+- (void) drawGear;
 @property (assign) float opacity;
 @property (strong) NSImage *image;
 @end

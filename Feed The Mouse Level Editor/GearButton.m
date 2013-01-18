@@ -9,10 +9,10 @@
 #import "GearButton.h"
 
 @implementation GearButton
-
+@synthesize mainWin;
 - (IBAction)addGear:(id)pId
 {
-
+    [mainWin addGear];
        NSLog(@"Hi there");
 }
 @end
