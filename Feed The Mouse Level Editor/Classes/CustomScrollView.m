@@ -23,7 +23,8 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
     // Drawing code here.
-
+    scrollPosition = [[self contentView] bounds].origin;
+    printf("scroll y: %f\n",scrollPosition.y);
 }
 
 @end

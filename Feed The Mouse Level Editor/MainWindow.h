@@ -10,6 +10,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/QuartzCore.h>
 #import "Gear.h"
+#import "CustomScrollView.h"
 
 @interface MainWindow : NSView
 {
@@ -19,10 +20,12 @@
     int iSelectedGear;
     CGPoint pt;
     NSMutableArray *gears;
+    CustomScrollView *scroller;
 }
 - (NSPoint)randomPoint;
 - (void) addGear;
 - (void) drawGear;
 @property (assign) float opacity;
 @property (strong) NSImage *image;
+@property (nonatomic, retain) IBOutlet CustomScrollView *scroller;
 @end

@@ -9,5 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface CustomScrollView : NSScrollView
-
+{
+@public
+    NSPoint scrollPosition;
+}
 @end

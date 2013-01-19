@@ -10,11 +10,11 @@
 #pragma mark Accessors
 
 @implementation MainWindow
-
+@synthesize scroller;
 - (void) addGear
 {
     NSPoint point = [self randomPoint];
-    
+    point.y += 234+scroller->scrollPosition.y;
     Gear *g = [[Gear alloc] initializeGearAt:point.x and:point.y];
     
     [gears addObject:g];
@@ -161,6 +161,9 @@
 - (void)mouseDown:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
+    printf("before y: %f\n", p.y);
+    p.y += 234+scroller->scrollPosition.y;
+    printf("after y: %f\n", p.y);
     Gear *g;
     iSelectedGear = -1;
     for (int i = 0; i < [gears count]; i++)
@@ -178,6 +181,7 @@
 - (void)mouseDragged:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
+    p.y += 234+scroller->scrollPosition.y;
     if (iSelectedGear!=-1)
     {
         Gear *g = (Gear*) [gears objectAtIndex:iSelectedGear];
@@ -189,8 +193,13 @@
 -(void)mouseUp:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
-    Gear *g = (Gear*) [gears objectAtIndex:iSelectedGear];
-    g->x = p.x;
-    g->y = p.y;
+    p.y += 234+scroller->scrollPosition.y;
+    Gear *g;
+    if ([gears count]>0 && iSelectedGear!=-1)
+    {
+        g = (Gear*) [gears objectAtIndex:iSelectedGear];
+        g->x = p.x;
+        g->y = p.y;
+    }
 }
 @end
