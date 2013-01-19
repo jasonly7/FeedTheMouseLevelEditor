@@ -14,7 +14,7 @@
 - (void) addGear
 {
     NSPoint point = [self randomPoint];
-    point.y += 234+scroller->scrollPosition.y;
+    point.y += 234+scroller->scrollPosition.y-17;
     Gear *g = [[Gear alloc] initializeGearAt:point.x and:point.y];
     
     [gears addObject:g];
@@ -163,7 +163,7 @@
 {
     NSPoint p = [theEvent locationInWindow];
     printf("before y: %f\n", p.y);
-    p.y += 234+scroller->scrollPosition.y;
+    p.y += 234+scroller->scrollPosition.y-17;
     printf("after y: %f\n", p.y);
     Gear *g;
     iSelectedGear = -1;
@@ -182,7 +182,7 @@
 - (void)mouseDragged:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
-    p.y += 234+scroller->scrollPosition.y;
+    p.y += 234-17+scroller->scrollPosition.y;
     if (iSelectedGear!=-1)
     {
         Gear *g = (Gear*) [gears objectAtIndex:iSelectedGear];
@@ -194,7 +194,7 @@
 -(void)mouseUp:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
-    p.y += 234+scroller->scrollPosition.y;
+    p.y += 234-17+scroller->scrollPosition.y;
     Gear *g;
     if ([gears count]>0 && iSelectedGear!=-1)
     {
