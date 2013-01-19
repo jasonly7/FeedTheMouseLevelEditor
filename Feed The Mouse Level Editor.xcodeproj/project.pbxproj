@@ -19,6 +19,7 @@
 		5040D540169A0CBE00ABB956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5040D53E169A0CBE00ABB956 /* InfoPlist.strings */; };
 		5040D543169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D542169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m */; };
 		5040D553169A26FC00ABB956 /* GearButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D552169A26FC00ABB956 /* GearButton.m */; };
+		5082B2FE16AA15B3000314E4 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 5082B2FD16AA15B3000314E4 /* Gear.m */; };
 		50CB1FD916A1B3E400310C4F /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CB1FD816A1B3E400310C4F /* MainWindow.m */; };
 		50CB1FEF16A1E7AB00310C4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CB1FEE16A1E7AB00310C4F /* QuartzCore.framework */; };
 		50CB202E16A1ED3500310C4F /* background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB1FF516A1ED3400310C4F /* background_1.png */; };
@@ -71,6 +72,7 @@
 		50CB205D16A1ED3500310C4F /* teeter_totter_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202B16A1ED3400310C4F /* teeter_totter_grey.png */; };
 		50CB205E16A1ED3500310C4F /* teeter_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202C16A1ED3400310C4F /* teeter_yellow.png */; };
 		50CB205F16A1ED3500310C4F /* teeter_yellow_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202D16A1ED3400310C4F /* teeter_yellow_grey.png */; };
+		50E91B4916AAD0C500671D50 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E91B4816AAD0C500671D50 /* Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		5040D542169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Feed_The_Mouse_Level_EditorTests.m; sourceTree = "<group>"; };
 		5040D551169A26FC00ABB956 /* GearButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearButton.h; sourceTree = "<group>"; };
 		5040D552169A26FC00ABB956 /* GearButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearButton.m; sourceTree = "<group>"; };
+		5082B2FC16AA15B3000314E4 /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gear.h; path = "Feed The Mouse Level Editor/Classes/Gear.h"; sourceTree = "<group>"; };
+		5082B2FD16AA15B3000314E4 /* Gear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gear.m; path = "Feed The Mouse Level Editor/Classes/Gear.m"; sourceTree = "<group>"; };
 		50CB1FD716A1B3E400310C4F /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
 		50CB1FD816A1B3E400310C4F /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
 		50CB1FEE16A1E7AB00310C4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -160,6 +164,8 @@
 		50CB202B16A1ED3400310C4F /* teeter_totter_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_grey.png; sourceTree = "<group>"; };
 		50CB202C16A1ED3400310C4F /* teeter_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_yellow.png; sourceTree = "<group>"; };
 		50CB202D16A1ED3400310C4F /* teeter_yellow_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_yellow_grey.png; sourceTree = "<group>"; };
+		50E91B4716AAD0C500671D50 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = "Feed The Mouse Level Editor/Classes/Circle.h"; sourceTree = "<group>"; };
+		50E91B4816AAD0C500671D50 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = "Feed The Mouse Level Editor/Classes/Circle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +302,10 @@
 		50CB1FE716A1D1C200310C4F /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				50E91B4716AAD0C500671D50 /* Circle.h */,
+				50E91B4816AAD0C500671D50 /* Circle.m */,
+				5082B2FC16AA15B3000314E4 /* Gear.h */,
+				5082B2FD16AA15B3000314E4 /* Gear.m */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -567,6 +577,8 @@
 				5040D553169A26FC00ABB956 /* GearButton.m in Sources */,
 				50CB1FD916A1B3E400310C4F /* MainWindow.m in Sources */,
 				5019EA2F16A622AE000BE7CA /* CustomScrollView.m in Sources */,
+				5082B2FE16AA15B3000314E4 /* Gear.m in Sources */,
+				50E91B4916AAD0C500671D50 /* Circle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

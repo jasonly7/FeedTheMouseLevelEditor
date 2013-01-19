@@ -9,14 +9,16 @@
 #import <Cocoa/Cocoa.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/QuartzCore.h>
+#import "Gear.h"
 
 @interface MainWindow : NSView
 {
     NSImage *image;
     float opacity;
     NSBezierPath *path;
-    bool gear;
+    int iSelectedGear;
     CGPoint pt;
+    NSMutableArray *gears;
 }
 - (NSPoint)randomPoint;
 - (void) addGear;

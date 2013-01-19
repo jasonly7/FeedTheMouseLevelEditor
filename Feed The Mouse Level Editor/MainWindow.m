@@ -13,8 +13,13 @@
 
 - (void) addGear
 {
-    gear = true;
+    NSPoint point = [self randomPoint];
+    
+    Gear *g = [[Gear alloc] initializeGearAt:point.x and:point.y];
+    
+    [gears addObject:g];
 }
+
 - (void) drawGear
 {
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"gear_blue.png" ofType:nil]];
@@ -67,6 +72,7 @@
         [path closePath];
         // Initialization code here.
        // opacity = 1.0;
+        gears = [[NSMutableArray alloc] initWithCapacity:10];
     }
     
     return self;
@@ -102,8 +108,9 @@
                  fraction:opacity];
     }
     
-    if (gear)
+    for (int i = 0; i < [gears count]; i++)
     {
+        Gear *gear = gears[i];
         NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"gear_blue.png" ofType:nil]];
         CIImage *ciImage = [[CIImage alloc] initWithContentsOfURL: url];
         NSImageRep *imageRep = [[NSBitmapImageRep alloc] initWithCIImage:ciImage];
@@ -116,6 +123,7 @@
             imageRect.origin = CGPointMake(0,0);
             imageRect.size = [image size];
             NSRect drawingRect = imageRect;
+            pt = CGPointMake(gear->x-87, gear->y-87);
             drawingRect.origin = pt;
 
             [image drawInRect:drawingRect
@@ -153,12 +161,36 @@
 - (void)mouseDown:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
-    pt = CGPointMake(p.x, p.y);
+    Gear *g;
+    iSelectedGear = -1;
+    for (int i = 0; i < [gears count]; i++)
+    {
+        g = (Gear*) [gears objectAtIndex:i];
+        
+        if ([g pointIsInside:p])
+        {
+            iSelectedGear = i;
+        }
+    }
+
 }
 
 - (void)mouseDragged:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
-    pt = CGPointMake(p.x, p.y);
+    if (iSelectedGear!=-1)
+    {
+        Gear *g = (Gear*) [gears objectAtIndex:iSelectedGear];
+        g->x = p.x;
+        g->y = p.y;
+    }
+}
+
+-(void)mouseUp:(NSEvent *)theEvent
+{
+    NSPoint p = [theEvent locationInWindow];
+    Gear *g = (Gear*) [gears objectAtIndex:iSelectedGear];
+    g->x = p.x;
+    g->y = p.y;
 }
 @end
