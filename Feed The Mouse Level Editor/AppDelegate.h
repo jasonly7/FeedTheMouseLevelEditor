@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "MyDocument.h"
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-
+- (NSXMLDocument*)createXMLDocumentFromFile:(NSString *)file;
+- (IBAction)save:(id)sender;
 @property (assign) IBOutlet NSWindow *window;
 
 @end

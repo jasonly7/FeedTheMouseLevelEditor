@@ -19,6 +19,9 @@
 		5040D540169A0CBE00ABB956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5040D53E169A0CBE00ABB956 /* InfoPlist.strings */; };
 		5040D543169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D542169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m */; };
 		5040D553169A26FC00ABB956 /* GearButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D552169A26FC00ABB956 /* GearButton.m */; };
+		505A04B816B41975009915CE /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A04B616B41975009915CE /* MyDocument.m */; };
+		505A04B916B41975009915CE /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A04B716B41975009915CE /* MyDocument.xib */; };
+		5067EF3D16AF4DF000BF70DF /* SaveMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067EF3C16AF4DF000BF70DF /* SaveMenuItem.m */; };
 		5082B2FE16AA15B3000314E4 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 5082B2FD16AA15B3000314E4 /* Gear.m */; };
 		50CB1FD916A1B3E400310C4F /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CB1FD816A1B3E400310C4F /* MainWindow.m */; };
 		50CB1FEF16A1E7AB00310C4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CB1FEE16A1E7AB00310C4F /* QuartzCore.framework */; };
@@ -109,6 +112,11 @@
 		5040D542169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Feed_The_Mouse_Level_EditorTests.m; sourceTree = "<group>"; };
 		5040D551169A26FC00ABB956 /* GearButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearButton.h; sourceTree = "<group>"; };
 		5040D552169A26FC00ABB956 /* GearButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearButton.m; sourceTree = "<group>"; };
+		505A04B516B41975009915CE /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyDocument.h; path = "Feed The Mouse Level Editor/Classes/MyDocument.h"; sourceTree = "<group>"; };
+		505A04B616B41975009915CE /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyDocument.m; path = "Feed The Mouse Level Editor/Classes/MyDocument.m"; sourceTree = "<group>"; };
+		505A04B716B41975009915CE /* MyDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyDocument.xib; path = "Feed The Mouse Level Editor/Classes/MyDocument.xib"; sourceTree = "<group>"; };
+		5067EF3B16AF4DF000BF70DF /* SaveMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaveMenuItem.h; path = "Feed The Mouse Level Editor/Classes/SaveMenuItem.h"; sourceTree = "<group>"; };
+		5067EF3C16AF4DF000BF70DF /* SaveMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaveMenuItem.m; path = "Feed The Mouse Level Editor/Classes/SaveMenuItem.m"; sourceTree = "<group>"; };
 		5082B2FC16AA15B3000314E4 /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gear.h; path = "Feed The Mouse Level Editor/Classes/Gear.h"; sourceTree = "<group>"; };
 		5082B2FD16AA15B3000314E4 /* Gear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gear.m; path = "Feed The Mouse Level Editor/Classes/Gear.m"; sourceTree = "<group>"; };
 		50CB1FD716A1B3E400310C4F /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
@@ -306,6 +314,11 @@
 				50E91B4816AAD0C500671D50 /* Circle.m */,
 				5082B2FC16AA15B3000314E4 /* Gear.h */,
 				5082B2FD16AA15B3000314E4 /* Gear.m */,
+				5067EF3B16AF4DF000BF70DF /* SaveMenuItem.h */,
+				5067EF3C16AF4DF000BF70DF /* SaveMenuItem.m */,
+				505A04B516B41975009915CE /* MyDocument.h */,
+				505A04B616B41975009915CE /* MyDocument.m */,
+				505A04B716B41975009915CE /* MyDocument.xib */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -538,6 +551,7 @@
 				50CB205D16A1ED3500310C4F /* teeter_totter_grey.png in Resources */,
 				50CB205E16A1ED3500310C4F /* teeter_yellow.png in Resources */,
 				50CB205F16A1ED3500310C4F /* teeter_yellow_grey.png in Resources */,
+				505A04B916B41975009915CE /* MyDocument.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +593,8 @@
 				5019EA2F16A622AE000BE7CA /* CustomScrollView.m in Sources */,
 				5082B2FE16AA15B3000314E4 /* Gear.m in Sources */,
 				50E91B4916AAD0C500671D50 /* Circle.m in Sources */,
+				5067EF3D16AF4DF000BF70DF /* SaveMenuItem.m in Sources */,
+				505A04B816B41975009915CE /* MyDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

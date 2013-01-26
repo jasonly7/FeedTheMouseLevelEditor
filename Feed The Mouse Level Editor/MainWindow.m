@@ -18,6 +18,7 @@
     Gear *g = [[Gear alloc] initializeGearAt:point.x and:point.y];
     
     [gears addObject:g];
+    
     [[NSApp mainWindow] makeKeyWindow];
 }
 
