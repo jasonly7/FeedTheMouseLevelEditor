@@ -15,6 +15,14 @@
     self = [super init];
     if (self) {
         // Add your subclass-specific initialization here.
+        NSXMLElement *root =
+        (NSXMLElement *)[NSXMLNode elementWithName:@"addresses"];
+        xmlDoc = [[NSXMLDocument alloc] initWithRootElement:root];
+        [xmlDoc setVersion:@"1.0"];
+        [xmlDoc setCharacterEncoding:@"UTF-8"];
+        [root addChild:[NSXMLNode commentWithStringValue:@"Hello world!"]];
+
+
     }
     return self;
 }
@@ -49,6 +57,28 @@
     // If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
     if (outError) {
         *outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
+    }
+    return YES;
+}
+
+- (BOOL)writeToFile:(NSString *)fileName ofType:(NSString *)type {
+    
+    NSData *xmlData = [xmlDoc XMLDataWithOptions:NSXMLNodePrettyPrint];
+    if (![xmlData writeToFile:fileName atomically:YES]) {
+        NSBeep();
+        NSLog(@"Could not write document out...");
+        return NO;
+    }
+    return YES;
+}
+
+-(BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError **)outError
+{
+    NSData *xmlData = [xmlDoc XMLDataWithOptions:NSXMLNodePrettyPrint];
+    if (![xmlData writeToURL:url atomically:YES]) {
+        NSBeep();
+        NSLog(@"Could not write document out...");
+        return NO;
     }
     return YES;
 }

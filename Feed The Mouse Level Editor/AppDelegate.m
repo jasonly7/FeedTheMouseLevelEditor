@@ -25,12 +25,12 @@
 - (IBAction)save:(id)sender
 {
     printf("saving");
-    int result;
+    long result;
 
-    NSArray *filetypes = [NSArray arrayWithObject:@"xml"];
+   // NSArray *filetypes = [NSArray arrayWithObject:@"xml"];
 
     NSSavePanel *sPanel = [NSSavePanel savePanel];
-    [sPanel setAllowsMultipleSelection:NO];
+ //   [sPanel setAllowsMultipleSelection:NO];
     result = [sPanel runModal];
    // result = [sPanel runModalForDirectory:@"./FeedTheMouse.xml" file:nil types:filetypes];
 
@@ -39,29 +39,18 @@
                     NSString *aFile = [sPanel filename];
             const char *szfile = [aFile UTF8String];
             printf("%s",szfile);
-            NSXMLDocument *xmlDoc = [self createXMLDocumentFromFile:aFile];
+        MyDocument *myDoc = [[MyDocument alloc] init];
+        NSError *err = nil;
+        [myDoc writeToURL:furl ofType:@"xml" error:&err];
+            //NSXMLDocument *xmlDoc = [self createXMLDocumentFromFile:aFile];
     }
 
 }
 
-- (NSXMLDocument*)createXMLDocumentFromFile:(NSString *)file {
-    NSXMLDocument *xmlDoc;
+//- (NSXMLDocument*)createXMLDocumentFromFile:(NSString *)file {
+   /* NSXMLDocument *xmlDoc;
     NSError *err=nil;
         
-  /*  if (![[MyDocument alloc] writeToURL:furl ofType:@"xml" error:err])
-    {
-        if (err)
-        {
-            NSLog(@"Can't create file %@.", file);
-            [self handleError:err];
-        }
-        return nil;
-    }*/
-   // NSXMLElement *element = [[NSXMLElement alloc] initWithName:@"FeedTheMouse"];
-    //xmlDoc = [[NSXMLDocument alloc] initWithRootElement:element];
-   // xmlDoc = [[NSXMLDocument alloc] initWithContentsOfURL:furl
-     //                                             options:(NSXMLNodePreserveWhitespace|NSXMLNodePreserveCDATA)
-       //                                             error:&err];
     NSString *text = @"<FeedTheMouse></FeedTheMouse>";
     NSString *path = file;
     [text writeToFile:path atomically:YES encoding: NSUTF8StringEncoding error: err];
@@ -87,9 +76,10 @@
     
     if (err) {
         [self handleError:err];
-    }
-    return xmlDoc;
-}
+    }*/
+    
+ //      return xmlDoc;
+//}
 
 
 @end

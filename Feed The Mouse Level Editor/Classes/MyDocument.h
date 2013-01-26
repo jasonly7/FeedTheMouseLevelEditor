@@ -9,5 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MyDocument : NSDocument
-
+{
+    NSXMLDocument *xmlDoc;
+}
 @end
