@@ -19,8 +19,10 @@
     NSBezierPath *path;
     int iSelectedGear;
     CGPoint pt;
-    NSMutableArray *gears;
     CustomScrollView *scroller;
+    @public
+        NSMutableArray *gears;
+
 }
 - (NSPoint)randomPoint;
 - (void) addGear;

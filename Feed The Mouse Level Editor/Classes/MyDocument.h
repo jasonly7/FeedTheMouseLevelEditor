@@ -11,5 +11,7 @@
 @interface MyDocument : NSDocument
 {
     NSXMLDocument *xmlDoc;
+    NSXMLElement *root;
 }
+- (void) addGear: (int) x andY: (int)y;
 @end

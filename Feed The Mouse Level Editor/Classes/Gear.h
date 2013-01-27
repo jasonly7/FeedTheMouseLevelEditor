@@ -15,4 +15,6 @@
 }
 
 - (Gear*) initializeGearAt:(float) x and: (float) y;
+- (int)getX;
+- (int)getY;
 @end

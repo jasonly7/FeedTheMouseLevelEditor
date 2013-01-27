@@ -16,4 +16,14 @@
     r = 87;
     return self;
 }
+
+- (int)getX
+{
+    return x;
+}
+
+- (int)getY
+{
+    return y;
+}
 @end

@@ -15,16 +15,35 @@
     self = [super init];
     if (self) {
         // Add your subclass-specific initialization here.
-        NSXMLElement *root =
-        (NSXMLElement *)[NSXMLNode elementWithName:@"addresses"];
+        root = (NSXMLElement *)[NSXMLNode elementWithName:@"FeedTheMouse"];
         xmlDoc = [[NSXMLDocument alloc] initWithRootElement:root];
         [xmlDoc setVersion:@"1.0"];
         [xmlDoc setCharacterEncoding:@"UTF-8"];
-        [root addChild:[NSXMLNode commentWithStringValue:@"Hello world!"]];
-
+        
+        //[root addChild:[NSXMLNode commentWithStringValue:@"Hello world!"]];
+       // NSXMLNode *gearNode = [[NSXMLNode alloc] initWithKind: NSXMLElementKind];
+        //gearNode.name = @"Gear";
+       // NSXMLElement *gearElement = (NSXMLElement*)[NSXMLNode elementWithName:@"Gear"];
+        //[root addChild:gearElement];
 
     }
     return self;
+}
+
+- (void) addGear: (int) x andY: (int)y
+{
+    NSXMLElement *gearElement = (NSXMLElement*)[NSXMLNode elementWithName:@"Gear"];
+    NSString *strX = [NSString stringWithFormat:@"%d", x];
+    NSXMLElement *xElement = (NSXMLElement*)[NSXMLNode elementWithName:@"X"];
+    [xElement initWithName:@"X" stringValue:strX];
+    //[xElement setValue:strX];
+    NSString *strY = [NSString stringWithFormat:@"%d", y];
+    NSXMLElement *yElement = (NSXMLElement*)[NSXMLNode elementWithName:@"Y"];
+    [yElement initWithName:@"Y" stringValue:strY];
+   // [yElement setValue:strY];
+    [gearElement addChild:xElement];
+    [gearElement addChild:yElement];
+    [root addChild:gearElement];
 }
 
 - (NSString *)windowNibName

@@ -8,9 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MyDocument.h"
+#import "MainWindow.h"
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-- (NSXMLDocument*)createXMLDocumentFromFile:(NSString *)file;
+{
+    MainWindow *mainWindow;
+}
 - (IBAction)save:(id)sender;
 @property (assign) IBOutlet NSWindow *window;
-
+@property (assign) IBOutlet MainWindow *mainWindow;
 @end
