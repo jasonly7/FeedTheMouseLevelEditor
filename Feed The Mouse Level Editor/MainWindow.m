@@ -13,13 +13,13 @@
 @synthesize scroller;
 - (void) addGear
 {
+    [[NSApp mainWindow] makeKeyWindow];
     NSPoint point = [self randomPoint];
     point.y += 234+scroller->scrollPosition.y-17;
     Gear *g = [[Gear alloc] initializeGearAt:point.x and:point.y];
     
     [gears addObject:g];
-    
-    [[NSApp mainWindow] makeKeyWindow];
+    [self setNeedsDisplay:YES];
 }
 
 - (void) drawGear
@@ -134,6 +134,8 @@
                      fraction:opacity];
         }
     }
+    
+    
 
 }
 
