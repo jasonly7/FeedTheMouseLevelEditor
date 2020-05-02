@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5019EA2F16A622AE000BE7CA /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019EA2E16A622AE000BE7CA /* CustomScrollView.m */; };
+		502BB7EF1A7417FC00050CC7 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 502BB7EE1A7417FC00050CC7 /* Coin.m */; };
+		502F2CDE191049C8000247EF /* flipper_blue_level_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = 502F2CDD191049C8000247EF /* flipper_blue_level_editor.png */; };
+		502F2CE01910A5A6000247EF /* teeter_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 502F2CDF1910A5A6000247EF /* teeter_orange.png */; };
 		5040D519169A0CBD00ABB956 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5040D518169A0CBD00ABB956 /* Cocoa.framework */; };
 		5040D523169A0CBD00ABB956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5040D521169A0CBD00ABB956 /* InfoPlist.strings */; };
 		5040D525169A0CBD00ABB956 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D524169A0CBD00ABB956 /* main.m */; };
@@ -19,10 +22,23 @@
 		5040D540169A0CBE00ABB956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5040D53E169A0CBE00ABB956 /* InfoPlist.strings */; };
 		5040D543169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D542169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m */; };
 		5040D553169A26FC00ABB956 /* GearButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D552169A26FC00ABB956 /* GearButton.m */; };
+		50422168172303B500B4218A /* DrumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50422167172303B500B4218A /* DrumButton.m */; };
+		5042216C17231F9C00B4218A /* Drum.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042216B17231F9C00B4218A /* Drum.m */; };
+		5048589616FFA7C900A99B8F /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 5048589516FFA7C900A99B8F /* Level.m */; };
 		505A04B816B41975009915CE /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A04B616B41975009915CE /* MyDocument.m */; };
 		505A04B916B41975009915CE /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A04B716B41975009915CE /* MyDocument.xib */; };
 		5067EF3D16AF4DF000BF70DF /* SaveMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067EF3C16AF4DF000BF70DF /* SaveMenuItem.m */; };
 		5082B2FE16AA15B3000314E4 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 5082B2FD16AA15B3000314E4 /* Gear.m */; };
+		509274BB1914056000D6FFB2 /* Mouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 509274BA1914056000D6FFB2 /* Mouse.m */; };
+		50AF3D8E190C2A290024919A /* FlipperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AF3D8D190C2A290024919A /* FlipperButton.m */; };
+		50AF3D91190C2C9C0024919A /* Flipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AF3D90190C2C9C0024919A /* Flipper.m */; };
+		50BD736C1910AA9200F1EF62 /* flipper_green_level_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BD73671910AA9200F1EF62 /* flipper_green_level_editor.png */; };
+		50BD736D1910AA9200F1EF62 /* flipper_magenta_level_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BD73681910AA9200F1EF62 /* flipper_magenta_level_editor.png */; };
+		50BD736E1910AA9200F1EF62 /* flipper_orange_level_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BD73691910AA9200F1EF62 /* flipper_orange_level_editor.png */; };
+		50BD736F1910AA9200F1EF62 /* flipper_purple_level_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BD736A1910AA9200F1EF62 /* flipper_purple_level_editor.png */; };
+		50BD73701910AA9200F1EF62 /* flipper_yellow_level_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BD736B1910AA9200F1EF62 /* flipper_yellow_level_editor.png */; };
+		50C3305118C9673000796352 /* TeeterTotter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3304E18C9673000796352 /* TeeterTotter.m */; };
+		50C3305218C9673000796352 /* TeeterTotterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C3305018C9673000796352 /* TeeterTotterButton.m */; };
 		50CB1FD916A1B3E400310C4F /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CB1FD816A1B3E400310C4F /* MainWindow.m */; };
 		50CB1FEF16A1E7AB00310C4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CB1FEE16A1E7AB00310C4F /* QuartzCore.framework */; };
 		50CB202E16A1ED3500310C4F /* background_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB1FF516A1ED3400310C4F /* background_1.png */; };
@@ -75,6 +91,9 @@
 		50CB205D16A1ED3500310C4F /* teeter_totter_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202B16A1ED3400310C4F /* teeter_totter_grey.png */; };
 		50CB205E16A1ED3500310C4F /* teeter_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202C16A1ED3400310C4F /* teeter_yellow.png */; };
 		50CB205F16A1ED3500310C4F /* teeter_yellow_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202D16A1ED3400310C4F /* teeter_yellow_grey.png */; };
+		50E2B0F81A702C300054B77A /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E2B0F71A702C300054B77A /* coin.png */; };
+		50E2B0FB1A70311B0054B77A /* CoinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E2B0FA1A70311B0054B77A /* CoinButton.m */; };
+		50E90C9F1719AE5E005D89F5 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E90C9E1719AE5D005D89F5 /* XMLParser.m */; };
 		50E91B4916AAD0C500671D50 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E91B4816AAD0C500671D50 /* Circle.m */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +110,10 @@
 /* Begin PBXFileReference section */
 		5019EA2D16A622AE000BE7CA /* CustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomScrollView.h; path = Classes/CustomScrollView.h; sourceTree = "<group>"; };
 		5019EA2E16A622AE000BE7CA /* CustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomScrollView.m; path = Classes/CustomScrollView.m; sourceTree = "<group>"; };
+		502BB7EE1A7417FC00050CC7 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
+		502BB7F01A741BF600050CC7 /* Coin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
+		502F2CDD191049C8000247EF /* flipper_blue_level_editor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipper_blue_level_editor.png; sourceTree = "<group>"; };
+		502F2CDF1910A5A6000247EF /* teeter_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_orange.png; sourceTree = "<group>"; };
 		5040D514169A0CBD00ABB956 /* Feed The Mouse Level Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feed The Mouse Level Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5040D518169A0CBD00ABB956 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5040D51B169A0CBD00ABB956 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -110,8 +133,14 @@
 		5040D53F169A0CBE00ABB956 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5040D541169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feed_The_Mouse_Level_EditorTests.h; sourceTree = "<group>"; };
 		5040D542169A0CBE00ABB956 /* Feed_The_Mouse_Level_EditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Feed_The_Mouse_Level_EditorTests.m; sourceTree = "<group>"; };
-		5040D551169A26FC00ABB956 /* GearButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GearButton.h; sourceTree = "<group>"; };
-		5040D552169A26FC00ABB956 /* GearButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GearButton.m; sourceTree = "<group>"; };
+		5040D551169A26FC00ABB956 /* GearButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GearButton.h; path = "Feed The Mouse Level Editor/GearButton.h"; sourceTree = "<group>"; };
+		5040D552169A26FC00ABB956 /* GearButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GearButton.m; path = "Feed The Mouse Level Editor/GearButton.m"; sourceTree = "<group>"; };
+		50422166172303B500B4218A /* DrumButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrumButton.h; path = "Feed The Mouse Level Editor/Classes/DrumButton.h"; sourceTree = "<group>"; };
+		50422167172303B500B4218A /* DrumButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrumButton.m; path = "Feed The Mouse Level Editor/Classes/DrumButton.m"; sourceTree = "<group>"; };
+		5042216A17231F9C00B4218A /* Drum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Drum.h; path = "Feed The Mouse Level Editor/Classes/Drum.h"; sourceTree = "<group>"; };
+		5042216B17231F9C00B4218A /* Drum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Drum.m; path = "Feed The Mouse Level Editor/Classes/Drum.m"; sourceTree = "<group>"; };
+		5048589416FFA7C900A99B8F /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = "Feed The Mouse Level Editor/Classes/Level.h"; sourceTree = "<group>"; };
+		5048589516FFA7C900A99B8F /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = "Feed The Mouse Level Editor/Classes/Level.m"; sourceTree = "<group>"; };
 		505A04B516B41975009915CE /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyDocument.h; path = "Feed The Mouse Level Editor/Classes/MyDocument.h"; sourceTree = "<group>"; };
 		505A04B616B41975009915CE /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyDocument.m; path = "Feed The Mouse Level Editor/Classes/MyDocument.m"; sourceTree = "<group>"; };
 		505A04B716B41975009915CE /* MyDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyDocument.xib; path = "Feed The Mouse Level Editor/Classes/MyDocument.xib"; sourceTree = "<group>"; };
@@ -119,6 +148,21 @@
 		5067EF3C16AF4DF000BF70DF /* SaveMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaveMenuItem.m; path = "Feed The Mouse Level Editor/Classes/SaveMenuItem.m"; sourceTree = "<group>"; };
 		5082B2FC16AA15B3000314E4 /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gear.h; path = "Feed The Mouse Level Editor/Classes/Gear.h"; sourceTree = "<group>"; };
 		5082B2FD16AA15B3000314E4 /* Gear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gear.m; path = "Feed The Mouse Level Editor/Classes/Gear.m"; sourceTree = "<group>"; };
+		509274B91914056000D6FFB2 /* Mouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mouse.h; path = "Feed The Mouse Level Editor/Classes/Mouse.h"; sourceTree = "<group>"; };
+		509274BA1914056000D6FFB2 /* Mouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mouse.m; path = "Feed The Mouse Level Editor/Classes/Mouse.m"; sourceTree = "<group>"; };
+		50AF3D8C190C2A290024919A /* FlipperButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipperButton.h; path = "Feed The Mouse Level Editor/Classes/FlipperButton.h"; sourceTree = "<group>"; };
+		50AF3D8D190C2A290024919A /* FlipperButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipperButton.m; path = "Feed The Mouse Level Editor/Classes/FlipperButton.m"; sourceTree = "<group>"; };
+		50AF3D8F190C2C9C0024919A /* Flipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flipper.h; path = "Feed The Mouse Level Editor/Classes/Flipper.h"; sourceTree = "<group>"; };
+		50AF3D90190C2C9C0024919A /* Flipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Flipper.m; path = "Feed The Mouse Level Editor/Classes/Flipper.m"; sourceTree = "<group>"; };
+		50BD73671910AA9200F1EF62 /* flipper_green_level_editor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipper_green_level_editor.png; sourceTree = "<group>"; };
+		50BD73681910AA9200F1EF62 /* flipper_magenta_level_editor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipper_magenta_level_editor.png; sourceTree = "<group>"; };
+		50BD73691910AA9200F1EF62 /* flipper_orange_level_editor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipper_orange_level_editor.png; sourceTree = "<group>"; };
+		50BD736A1910AA9200F1EF62 /* flipper_purple_level_editor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipper_purple_level_editor.png; sourceTree = "<group>"; };
+		50BD736B1910AA9200F1EF62 /* flipper_yellow_level_editor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipper_yellow_level_editor.png; sourceTree = "<group>"; };
+		50C3304D18C9673000796352 /* TeeterTotter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeeterTotter.h; path = "Feed The Mouse Level Editor/Classes/TeeterTotter.h"; sourceTree = "<group>"; };
+		50C3304E18C9673000796352 /* TeeterTotter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeeterTotter.m; path = "Feed The Mouse Level Editor/Classes/TeeterTotter.m"; sourceTree = "<group>"; };
+		50C3304F18C9673000796352 /* TeeterTotterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeeterTotterButton.h; path = "Feed The Mouse Level Editor/Classes/TeeterTotterButton.h"; sourceTree = "<group>"; };
+		50C3305018C9673000796352 /* TeeterTotterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeeterTotterButton.m; path = "Feed The Mouse Level Editor/Classes/TeeterTotterButton.m"; sourceTree = "<group>"; };
 		50CB1FD716A1B3E400310C4F /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindow.h; sourceTree = "<group>"; };
 		50CB1FD816A1B3E400310C4F /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindow.m; sourceTree = "<group>"; };
 		50CB1FEE16A1E7AB00310C4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -172,6 +216,11 @@
 		50CB202B16A1ED3400310C4F /* teeter_totter_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_grey.png; sourceTree = "<group>"; };
 		50CB202C16A1ED3400310C4F /* teeter_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_yellow.png; sourceTree = "<group>"; };
 		50CB202D16A1ED3400310C4F /* teeter_yellow_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_yellow_grey.png; sourceTree = "<group>"; };
+		50E2B0F71A702C300054B77A /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		50E2B0F91A702DCC0054B77A /* CoinButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinButton.h; sourceTree = "<group>"; };
+		50E2B0FA1A70311B0054B77A /* CoinButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinButton.m; sourceTree = "<group>"; };
+		50E90C9D1719AE5D005D89F5 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = "Feed The Mouse Level Editor/Classes/XMLParser.h"; sourceTree = "<group>"; };
+		50E90C9E1719AE5D005D89F5 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Feed The Mouse Level Editor/Classes/XMLParser.m"; sourceTree = "<group>"; };
 		50E91B4716AAD0C500671D50 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = "Feed The Mouse Level Editor/Classes/Circle.h"; sourceTree = "<group>"; };
 		50E91B4816AAD0C500671D50 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = "Feed The Mouse Level Editor/Classes/Circle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,8 +300,6 @@
 				50CB1FD716A1B3E400310C4F /* MainWindow.h */,
 				50CB1FD816A1B3E400310C4F /* MainWindow.m */,
 				5040D51F169A0CBD00ABB956 /* Supporting Files */,
-				5040D551169A26FC00ABB956 /* GearButton.h */,
-				5040D552169A26FC00ABB956 /* GearButton.m */,
 			);
 			path = "Feed The Mouse Level Editor";
 			sourceTree = "<group>";
@@ -310,6 +357,18 @@
 		50CB1FE716A1D1C200310C4F /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				50C3304D18C9673000796352 /* TeeterTotter.h */,
+				50C3304E18C9673000796352 /* TeeterTotter.m */,
+				50C3304F18C9673000796352 /* TeeterTotterButton.h */,
+				50C3305018C9673000796352 /* TeeterTotterButton.m */,
+				5042216A17231F9C00B4218A /* Drum.h */,
+				5042216B17231F9C00B4218A /* Drum.m */,
+				5040D551169A26FC00ABB956 /* GearButton.h */,
+				5040D552169A26FC00ABB956 /* GearButton.m */,
+				50422166172303B500B4218A /* DrumButton.h */,
+				50422167172303B500B4218A /* DrumButton.m */,
+				50E90C9D1719AE5D005D89F5 /* XMLParser.h */,
+				50E90C9E1719AE5D005D89F5 /* XMLParser.m */,
 				50E91B4716AAD0C500671D50 /* Circle.h */,
 				50E91B4816AAD0C500671D50 /* Circle.m */,
 				5082B2FC16AA15B3000314E4 /* Gear.h */,
@@ -319,6 +378,18 @@
 				505A04B516B41975009915CE /* MyDocument.h */,
 				505A04B616B41975009915CE /* MyDocument.m */,
 				505A04B716B41975009915CE /* MyDocument.xib */,
+				5048589416FFA7C900A99B8F /* Level.h */,
+				5048589516FFA7C900A99B8F /* Level.m */,
+				50AF3D8C190C2A290024919A /* FlipperButton.h */,
+				50AF3D8D190C2A290024919A /* FlipperButton.m */,
+				50AF3D8F190C2C9C0024919A /* Flipper.h */,
+				50AF3D90190C2C9C0024919A /* Flipper.m */,
+				509274B91914056000D6FFB2 /* Mouse.h */,
+				509274BA1914056000D6FFB2 /* Mouse.m */,
+				50E2B0F91A702DCC0054B77A /* CoinButton.h */,
+				50E2B0FA1A70311B0054B77A /* CoinButton.m */,
+				502BB7EE1A7417FC00050CC7 /* Coin.m */,
+				502BB7F01A741BF600050CC7 /* Coin.h */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -338,6 +409,7 @@
 		50CB200316A1ED3400310C4F /* Triggers */ = {
 			isa = PBXGroup;
 			children = (
+				50E2B0F71A702C300054B77A /* coin.png */,
 				50CB200416A1ED3400310C4F /* Drums */,
 				50CB200A16A1ED3400310C4F /* Flipper */,
 				50CB201316A1ED3400310C4F /* Gear */,
@@ -364,6 +436,12 @@
 		50CB200A16A1ED3400310C4F /* Flipper */ = {
 			isa = PBXGroup;
 			children = (
+				50BD73671910AA9200F1EF62 /* flipper_green_level_editor.png */,
+				50BD73681910AA9200F1EF62 /* flipper_magenta_level_editor.png */,
+				50BD73691910AA9200F1EF62 /* flipper_orange_level_editor.png */,
+				50BD736A1910AA9200F1EF62 /* flipper_purple_level_editor.png */,
+				50BD736B1910AA9200F1EF62 /* flipper_yellow_level_editor.png */,
+				502F2CDD191049C8000247EF /* flipper_blue_level_editor.png */,
 				50CB200B16A1ED3400310C4F /* flipper_blue.png */,
 				50CB200C16A1ED3400310C4F /* flipper_blue_grey.png */,
 				50CB200D16A1ED3400310C4F /* flipper_green.png */,
@@ -413,6 +491,7 @@
 		50CB202316A1ED3400310C4F /* TeeterTotters */ = {
 			isa = PBXGroup;
 			children = (
+				502F2CDF1910A5A6000247EF /* teeter_orange.png */,
 				50CB202416A1ED3400310C4F /* teeter_blue.png */,
 				50CB202516A1ED3400310C4F /* teeter_blue_grey.png */,
 				50CB202616A1ED3400310C4F /* teeter_green.png */,
@@ -464,7 +543,7 @@
 			name = "Feed The Mouse Level EditorTests";
 			productName = "Feed The Mouse Level EditorTests";
 			productReference = 5040D535169A0CBE00ABB956 /* Feed The Mouse Level EditorTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -472,7 +551,7 @@
 		5040D50B169A0CBD00ABB956 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jason Ly";
 			};
 			buildConfigurationList = 5040D50E169A0CBD00ABB956 /* Build configuration list for PBXProject "Feed The Mouse Level Editor" */;
@@ -502,10 +581,13 @@
 				5040D529169A0CBD00ABB956 /* Credits.rtf in Resources */,
 				5040D52F169A0CBE00ABB956 /* MainMenu.xib in Resources */,
 				50CB202E16A1ED3500310C4F /* background_1.png in Resources */,
+				50BD736F1910AA9200F1EF62 /* flipper_purple_level_editor.png in Resources */,
 				50CB202F16A1ED3500310C4F /* background_2.png in Resources */,
 				50CB203016A1ED3500310C4F /* background_3.png in Resources */,
+				50BD73701910AA9200F1EF62 /* flipper_yellow_level_editor.png in Resources */,
 				50CB203116A1ED3500310C4F /* background_4.png in Resources */,
 				50CB203216A1ED3500310C4F /* cheese.png in Resources */,
+				502F2CE01910A5A6000247EF /* teeter_orange.png in Resources */,
 				50CB203316A1ED3500310C4F /* MouseBlink.png in Resources */,
 				50CB203416A1ED3500310C4F /* MouseChew.png in Resources */,
 				50CB203516A1ED3500310C4F /* MouseCloseMouth.PNG in Resources */,
@@ -513,6 +595,9 @@
 				50CB203716A1ED3500310C4F /* MouseSad.png in Resources */,
 				50CB203816A1ED3500310C4F /* MouseWait.png in Resources */,
 				50CB203916A1ED3500310C4F /* MouseWaitOpen.png in Resources */,
+				50E2B0F81A702C300054B77A /* coin.png in Resources */,
+				50BD736E1910AA9200F1EF62 /* flipper_orange_level_editor.png in Resources */,
+				502F2CDE191049C8000247EF /* flipper_blue_level_editor.png in Resources */,
 				50CB203A16A1ED3500310C4F /* newclosemouthsheet.png in Resources */,
 				50CB203B16A1ED3500310C4F /* newopenmouthsheet.png in Resources */,
 				50CB203C16A1ED3500310C4F /* Drum.png in Resources */,
@@ -520,12 +605,14 @@
 				50CB203E16A1ED3500310C4F /* drum_face_right.png in Resources */,
 				50CB203F16A1ED3500310C4F /* drum_flat.png in Resources */,
 				50CB204016A1ED3500310C4F /* DrumsSheet.PNG in Resources */,
+				50BD736D1910AA9200F1EF62 /* flipper_magenta_level_editor.png in Resources */,
 				50CB204116A1ED3500310C4F /* flipper_blue.png in Resources */,
 				50CB204216A1ED3500310C4F /* flipper_blue_grey.png in Resources */,
 				50CB204316A1ED3500310C4F /* flipper_green.png in Resources */,
 				50CB204416A1ED3500310C4F /* flipper_green_grey.png in Resources */,
 				50CB204516A1ED3500310C4F /* flipper_purple.png in Resources */,
 				50CB204616A1ED3500310C4F /* flipper_purple_grey.png in Resources */,
+				50BD736C1910AA9200F1EF62 /* flipper_green_level_editor.png in Resources */,
 				50CB204716A1ED3500310C4F /* flipper_yellow.png in Resources */,
 				50CB204816A1ED3500310C4F /* flipper_yellow_grey.png in Resources */,
 				50CB204916A1ED3500310C4F /* gear_blue.png in Resources */,
@@ -588,13 +675,24 @@
 			files = (
 				5040D525169A0CBD00ABB956 /* main.m in Sources */,
 				5040D52C169A0CBD00ABB956 /* AppDelegate.m in Sources */,
+				50C3305118C9673000796352 /* TeeterTotter.m in Sources */,
+				50C3305218C9673000796352 /* TeeterTotterButton.m in Sources */,
+				50E2B0FB1A70311B0054B77A /* CoinButton.m in Sources */,
 				5040D553169A26FC00ABB956 /* GearButton.m in Sources */,
 				50CB1FD916A1B3E400310C4F /* MainWindow.m in Sources */,
 				5019EA2F16A622AE000BE7CA /* CustomScrollView.m in Sources */,
 				5082B2FE16AA15B3000314E4 /* Gear.m in Sources */,
+				50AF3D8E190C2A290024919A /* FlipperButton.m in Sources */,
+				502BB7EF1A7417FC00050CC7 /* Coin.m in Sources */,
+				509274BB1914056000D6FFB2 /* Mouse.m in Sources */,
 				50E91B4916AAD0C500671D50 /* Circle.m in Sources */,
 				5067EF3D16AF4DF000BF70DF /* SaveMenuItem.m in Sources */,
 				505A04B816B41975009915CE /* MyDocument.m in Sources */,
+				5048589616FFA7C900A99B8F /* Level.m in Sources */,
+				50E90C9F1719AE5E005D89F5 /* XMLParser.m in Sources */,
+				50AF3D91190C2C9C0024919A /* Flipper.m in Sources */,
+				50422168172303B500B4218A /* DrumButton.m in Sources */,
+				5042216C17231F9C00B4218A /* Drum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,7 +754,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -685,7 +782,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;

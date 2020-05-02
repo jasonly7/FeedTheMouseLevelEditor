@@ -13,6 +13,6 @@
 - (IBAction)addGear:(id)pId
 {
     [mainWin addGear];
-       NSLog(@"Hi there");
+       NSLog(@"adding gear");
 }
 @end

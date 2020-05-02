@@ -11,10 +11,17 @@
 
 @interface Gear : Circle
 {
-
+    NSColor *color;
+    NSURL *url;
 }
 
 - (Gear*) initializeGearAt:(float) x and: (float) y;
 - (int)getX;
 - (int)getY;
+- (NSColor*) getColor;
+- (NSString*) getStringColor;
+- (NSURL*) getURL;
+- (void) setX: (int) value;
+- (void) setY: (int) value;
+- (void) setColor :(NSColor*) value;
 @end
