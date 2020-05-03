@@ -77,13 +77,13 @@
 
 - (bool) pointIsInside: (NSPoint)pt
 {
-    if (pt.x < x - 84)
+    if (pt.x < x - 74)
         return false;
-    if (pt.x > x + 84)
+    if (pt.x > x + 74)
         return false;
-    if (pt.y > y + 84)
+    if (pt.y > y + 74)
         return false;
-    if (pt.y < y - 84)
+    if (pt.y < y - 74)
         return false;
     return true;
 }
