@@ -473,8 +473,8 @@ typedef enum toolMode
             NSRect drawingRect = imageRect;
             pt = CGPointMake(flipper->x-84, flipper->y-84);
             drawingRect.origin = pt;
-            drawingRect.size.height = 168;
-            drawingRect.size.width = 168;
+            drawingRect.size.height = 336;
+            drawingRect.size.width = 336;
             [newImage lockFocus];
             /**
              * Apply the following transformations:
@@ -532,10 +532,10 @@ typedef enum toolMode
             imageRect.size = [image size];
             
             NSRect drawingRect = imageRect;
-            pt = CGPointMake(teeterTotter->x-90, teeterTotter->y-36);
+            pt = CGPointMake(teeterTotter->x-74, teeterTotter->y-74);
             drawingRect.origin = pt;
-            drawingRect.size.height = 72;
-            drawingRect.size.width = 180;
+            drawingRect.size.height = 296;
+            drawingRect.size.width = 296;
             [newImage lockFocus];
             /**
              * Apply the following transformations:
@@ -546,11 +546,11 @@ typedef enum toolMode
              * - re-translate the rotated image back down to the lower left corner
              *   so that it appears in the right place.
              */
-            [trans translateXBy:90 yBy:36];
+            [trans translateXBy:74 yBy:74];
             //[trans rotateByDegrees:teeterTotter->angle];
-            [trans translateXBy:-90 yBy:-36];
+            [trans translateXBy:-74 yBy:-74];
             [trans set];
-            [image drawAtPoint:NSZeroPoint fromRect:NSMakeRect(0, 0,180,72) operation:NSCompositeCopy fraction:1.0];
+            [image drawAtPoint:NSZeroPoint fromRect:NSMakeRect(0, 0,148,148) operation:NSCompositeCopy fraction:1.0];
             
             [newImage unlockFocus];
             [newImage drawInRect:drawingRect

@@ -78,7 +78,7 @@
 
 - (NSURL*) getURL
 {
-    if (color == [NSColor purpleColor])
+    /*if (color == [NSColor purpleColor])
         url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_purple.png" ofType:nil]];
     else if (color == [NSColor orangeColor])
         url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_orange.png" ofType:nil]];
@@ -86,8 +86,8 @@
         url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_yellow.png" ofType:nil]];
     else if (color == [NSColor greenColor])
         url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_green.png" ofType:nil]];
-    else
-        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_blue.png" ofType:nil]];
+    else*/
+    url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter.png" ofType:nil]];
     return url;
 }
 
