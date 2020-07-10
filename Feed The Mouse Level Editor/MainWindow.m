@@ -639,8 +639,7 @@ typedef enum toolMode
     iSelectedFlipper = -1;
     isMouseSelected = false;
     mouse = currentLevel->mouse;
-    if ([mouse pointIsInside:p])
-        isMouseSelected = true;
+    
     for (int i = 0; i < [currentLevel->coins count]; i++)
     {
         c = (Coin*) [currentLevel->coins objectAtIndex:i];
@@ -648,6 +647,8 @@ typedef enum toolMode
         if ([c pointIsInside:p])
         {
             iSelectedCoin = i;
+            [self setNeedsDisplay:YES];
+            return;
         }
     }
     for (int i = 0; i < [currentLevel->gears count]; i++)
@@ -657,6 +658,8 @@ typedef enum toolMode
         if ([g pointIsInside:p])
         {
             iSelectedGear = i;
+            [self setNeedsDisplay:YES];
+            return;
         }
     }
     for (int i = 0; i < [currentLevel->drums count]; i++)
@@ -666,6 +669,8 @@ typedef enum toolMode
         if ([d pointIsInside:p])
         {
             iSelectedDrum = i;
+            [self setNeedsDisplay:YES];
+            return;
         }
     }
     for (int i = 0; i < [currentLevel->teeterTotters count]; i++)
@@ -675,6 +680,8 @@ typedef enum toolMode
         if ([t pointIsInside:p])
         {
             iSelectedTotter = i;
+            [self setNeedsDisplay:YES];
+            return;
         }
     }
     for (int i = 0; i < [currentLevel->flippers count]; i++)
@@ -684,8 +691,13 @@ typedef enum toolMode
         if ([f pointIsInside:p])
         {
             iSelectedFlipper = i;
+            [self setNeedsDisplay:YES];
+            return;
         }
     }
+    
+    if ([mouse pointIsInside:p])
+        isMouseSelected = true;
     [self setNeedsDisplay:YES];
 }
 
