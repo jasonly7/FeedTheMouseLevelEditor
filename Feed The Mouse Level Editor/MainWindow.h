@@ -48,6 +48,7 @@
 - (IBAction)save:(id)sender;
 - (IBAction)open:(id)sender;
 - (IBAction)New:(id)sender;
+- (IBAction)pickColor:(id)sender;
 - (NSPoint)randomPoint;
 - (void) addGear;
 - (void) addDrum;

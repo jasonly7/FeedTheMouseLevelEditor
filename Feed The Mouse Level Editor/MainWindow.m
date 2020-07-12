@@ -969,4 +969,10 @@ typedef enum toolMode
     }
     [self setNeedsDisplay:YES];
 }
+
+- (IBAction)pickColor:(id)sender
+{
+    printf("pick color");
+    
+}
 @end

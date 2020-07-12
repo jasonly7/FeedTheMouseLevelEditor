@@ -95,6 +95,7 @@
 		50E2B0FB1A70311B0054B77A /* CoinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E2B0FA1A70311B0054B77A /* CoinButton.m */; };
 		50E90C9F1719AE5E005D89F5 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E90C9E1719AE5D005D89F5 /* XMLParser.m */; };
 		50E91B4916AAD0C500671D50 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E91B4816AAD0C500671D50 /* Circle.m */; };
+		86C3885224BA89A200416129 /* ColorCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C3885124BA89A200416129 /* ColorCombo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +224,9 @@
 		50E90C9E1719AE5D005D89F5 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Feed The Mouse Level Editor/Classes/XMLParser.m"; sourceTree = "<group>"; };
 		50E91B4716AAD0C500671D50 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = "Feed The Mouse Level Editor/Classes/Circle.h"; sourceTree = "<group>"; };
 		50E91B4816AAD0C500671D50 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = "Feed The Mouse Level Editor/Classes/Circle.m"; sourceTree = "<group>"; };
+		86C3884B24BA867000416129 /* Feed The Mouse Level Editor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Feed The Mouse Level Editor-Bridging-Header.h"; sourceTree = "<group>"; };
+		86C3885024BA89A200416129 /* ColorCombo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCombo.h; sourceTree = "<group>"; };
+		86C3885124BA89A200416129 /* ColorCombo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCombo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +254,8 @@
 		5040D509169A0CBD00ABB956 = {
 			isa = PBXGroup;
 			children = (
+				86C3885024BA89A200416129 /* ColorCombo.h */,
+				86C3885124BA89A200416129 /* ColorCombo.m */,
 				50CB1FEE16A1E7AB00310C4F /* QuartzCore.framework */,
 				50CB1FE716A1D1C200310C4F /* classes */,
 				5040D54E169A22D700ABB956 /* images */,
@@ -300,6 +306,7 @@
 				50CB1FD716A1B3E400310C4F /* MainWindow.h */,
 				50CB1FD816A1B3E400310C4F /* MainWindow.m */,
 				5040D51F169A0CBD00ABB956 /* Supporting Files */,
+				86C3884B24BA867000416129 /* Feed The Mouse Level Editor-Bridging-Header.h */,
 			);
 			path = "Feed The Mouse Level Editor";
 			sourceTree = "<group>";
@@ -553,12 +560,18 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jason Ly";
+				TargetAttributes = {
+					5040D513169A0CBD00ABB956 = {
+						LastSwiftMigration = 1140;
+					};
+				};
 			};
 			buildConfigurationList = 5040D50E169A0CBD00ABB956 /* Build configuration list for PBXProject "Feed The Mouse Level Editor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 5040D509169A0CBD00ABB956;
@@ -688,6 +701,7 @@
 				50E91B4916AAD0C500671D50 /* Circle.m in Sources */,
 				5067EF3D16AF4DF000BF70DF /* SaveMenuItem.m in Sources */,
 				505A04B816B41975009915CE /* MyDocument.m in Sources */,
+				86C3885224BA89A200416129 /* ColorCombo.m in Sources */,
 				5048589616FFA7C900A99B8F /* Level.m in Sources */,
 				50E90C9F1719AE5E005D89F5 /* XMLParser.m in Sources */,
 				50AF3D91190C2C9C0024919A /* Flipper.m in Sources */,
@@ -802,11 +816,16 @@
 		5040D547169A0CBE00ABB956 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Feed The Mouse Level Editor/Feed The Mouse Level Editor-Prefix.pch";
 				INFOPLIST_FILE = "Feed The Mouse Level Editor/Feed The Mouse Level Editor-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Feed The Mouse Level Editor/Feed The Mouse Level Editor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -814,11 +833,15 @@
 		5040D548169A0CBE00ABB956 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Feed The Mouse Level Editor/Feed The Mouse Level Editor-Prefix.pch";
 				INFOPLIST_FILE = "Feed The Mouse Level Editor/Feed The Mouse Level Editor-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Feed The Mouse Level Editor/Feed The Mouse Level Editor-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

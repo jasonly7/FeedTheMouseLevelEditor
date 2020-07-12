@@ -16,6 +16,7 @@
 //- (IBAction)save:(id)sender;
 - (IBAction)addLevel:(id)sender;
 
+
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet MainWindow *mainWindow;
 
