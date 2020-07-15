@@ -23,24 +23,25 @@
     float opacity;
    // NSBezierPath *path;
     int iSelectedCoin;
-    int iSelectedGear;
+    
     int iSelectedDrum;
     int iSelectedTotter;
-    int iSelectedFlipper;
     bool isMouseSelected;
     CGPoint pt;
     CustomScrollView *scroller;
     NSComboBox *cboLevel;
     NSTextField *lblCoordinates;
     NSMutableArray *levels;
-    Level *currentLevel;
+    
     int curIndex;
     NSTrackingArea *trackingArea;
     Mouse *mouse;
     @public
-        //NSMutableArray *gears;
-    
+        Level *currentLevel;
+        int iSelectedGear;
+        int iSelectedFlipper;
 
+    
 }
 
 //- (IBAction)addLevel:(id)sender;

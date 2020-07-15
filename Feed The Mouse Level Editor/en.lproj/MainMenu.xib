@@ -662,7 +662,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="640" height="960"/>
                         <clipView key="contentView" id="ZLQ-nZ-fuN">
                             <rect key="frame" x="1" y="1" width="623" height="943"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="715" customClass="MainWindow">
                                     <rect key="frame" x="0.0" y="0.0" width="640" height="960"/>
@@ -773,7 +773,8 @@
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
-                <outlet property="mainWindow" destination="715" id="745"/>
+                <outlet property="mainWindow" destination="715" id="Viw-Pc-oci"/>
+                <outlet property="propertyWindow" destination="t1R-vQ-gLf" id="sKh-jC-tSP"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
@@ -895,7 +896,7 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="1636" y="-68" width="276" height="378"/>
             <rect key="screenRect" x="1440" y="-180" width="1920" height="1057"/>
-            <view key="contentView" id="t1R-vQ-gLf">
+            <view key="contentView" id="t1R-vQ-gLf" customClass="PropertyWindow">
                 <rect key="frame" x="0.0" y="0.0" width="276" height="378"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -924,8 +925,15 @@
                                 <action selector="colorPick:" target="NmX-2y-fCN" id="ZzL-tP-XaY"/>
                             </connections>
                         </comboBoxCell>
+                        <connections>
+                            <outlet property="mainWindow" destination="715" id="w87-Lu-5Jm"/>
+                        </connections>
                     </comboBox>
                 </subviews>
+                <connections>
+                    <outlet property="colorComboBox" destination="NmX-2y-fCN" id="WDt-n6-mzz"/>
+                    <outlet property="mainWindow" destination="715" id="vZ8-tj-voG"/>
+                </connections>
             </view>
             <point key="canvasLocation" x="-79" y="108"/>
         </window>

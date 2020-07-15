@@ -95,6 +95,7 @@
 		50E2B0FB1A70311B0054B77A /* CoinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E2B0FA1A70311B0054B77A /* CoinButton.m */; };
 		50E90C9F1719AE5E005D89F5 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E90C9E1719AE5D005D89F5 /* XMLParser.m */; };
 		50E91B4916AAD0C500671D50 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E91B4816AAD0C500671D50 /* Circle.m */; };
+		8653AB0C24BBE9C000CCEE65 /* PropertyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8653AB0B24BBE9C000CCEE65 /* PropertyWindow.m */; };
 		86C3885224BA89A200416129 /* ColorCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C3885124BA89A200416129 /* ColorCombo.m */; };
 /* End PBXBuildFile section */
 
@@ -224,6 +225,8 @@
 		50E90C9E1719AE5D005D89F5 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = "Feed The Mouse Level Editor/Classes/XMLParser.m"; sourceTree = "<group>"; };
 		50E91B4716AAD0C500671D50 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = "Feed The Mouse Level Editor/Classes/Circle.h"; sourceTree = "<group>"; };
 		50E91B4816AAD0C500671D50 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = "Feed The Mouse Level Editor/Classes/Circle.m"; sourceTree = "<group>"; };
+		8653AB0A24BBE9C000CCEE65 /* PropertyWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyWindow.h; sourceTree = "<group>"; };
+		8653AB0B24BBE9C000CCEE65 /* PropertyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyWindow.m; sourceTree = "<group>"; };
 		86C3884B24BA867000416129 /* Feed The Mouse Level Editor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Feed The Mouse Level Editor-Bridging-Header.h"; sourceTree = "<group>"; };
 		86C3885024BA89A200416129 /* ColorCombo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCombo.h; sourceTree = "<group>"; };
 		86C3885124BA89A200416129 /* ColorCombo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCombo.m; sourceTree = "<group>"; };
@@ -301,6 +304,8 @@
 				5040D52A169A0CBD00ABB956 /* AppDelegate.h */,
 				5040D52B169A0CBD00ABB956 /* AppDelegate.m */,
 				5040D52D169A0CBE00ABB956 /* MainMenu.xib */,
+				8653AB0A24BBE9C000CCEE65 /* PropertyWindow.h */,
+				8653AB0B24BBE9C000CCEE65 /* PropertyWindow.m */,
 				5019EA2D16A622AE000BE7CA /* CustomScrollView.h */,
 				5019EA2E16A622AE000BE7CA /* CustomScrollView.m */,
 				50CB1FD716A1B3E400310C4F /* MainWindow.h */,
@@ -692,6 +697,7 @@
 				50C3305218C9673000796352 /* TeeterTotterButton.m in Sources */,
 				50E2B0FB1A70311B0054B77A /* CoinButton.m in Sources */,
 				5040D553169A26FC00ABB956 /* GearButton.m in Sources */,
+				8653AB0C24BBE9C000CCEE65 /* PropertyWindow.m in Sources */,
 				50CB1FD916A1B3E400310C4F /* MainWindow.m in Sources */,
 				5019EA2F16A622AE000BE7CA /* CustomScrollView.m in Sources */,
 				5082B2FE16AA15B3000314E4 /* Gear.m in Sources */,
