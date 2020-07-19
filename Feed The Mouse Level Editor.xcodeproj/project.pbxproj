@@ -10,7 +10,6 @@
 		5019EA2F16A622AE000BE7CA /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019EA2E16A622AE000BE7CA /* CustomScrollView.m */; };
 		502BB7EF1A7417FC00050CC7 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = 502BB7EE1A7417FC00050CC7 /* Coin.m */; };
 		502F2CDE191049C8000247EF /* flipper_blue_level_editor.png in Resources */ = {isa = PBXBuildFile; fileRef = 502F2CDD191049C8000247EF /* flipper_blue_level_editor.png */; };
-		502F2CE01910A5A6000247EF /* teeter_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 502F2CDF1910A5A6000247EF /* teeter_orange.png */; };
 		5040D519169A0CBD00ABB956 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5040D518169A0CBD00ABB956 /* Cocoa.framework */; };
 		5040D523169A0CBD00ABB956 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5040D521169A0CBD00ABB956 /* InfoPlist.strings */; };
 		5040D525169A0CBD00ABB956 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5040D524169A0CBD00ABB956 /* main.m */; };
@@ -81,22 +80,19 @@
 		50CB205316A1ED3500310C4F /* star_slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB201F16A1ED3400310C4F /* star_slider.png */; };
 		50CB205416A1ED3500310C4F /* star.mat in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202116A1ED3400310C4F /* star.mat */; };
 		50CB205516A1ED3500310C4F /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202216A1ED3400310C4F /* star.png */; };
-		50CB205616A1ED3500310C4F /* teeter_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202416A1ED3400310C4F /* teeter_blue.png */; };
-		50CB205716A1ED3500310C4F /* teeter_blue_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202516A1ED3400310C4F /* teeter_blue_grey.png */; };
-		50CB205816A1ED3500310C4F /* teeter_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202616A1ED3400310C4F /* teeter_green.png */; };
-		50CB205916A1ED3500310C4F /* teeter_green_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202716A1ED3400310C4F /* teeter_green_grey.png */; };
-		50CB205A16A1ED3500310C4F /* teeter_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202816A1ED3400310C4F /* teeter_purple.png */; };
-		50CB205B16A1ED3500310C4F /* teeter_purple_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202916A1ED3400310C4F /* teeter_purple_grey.png */; };
-		50CB205C16A1ED3500310C4F /* teeter_totter.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202A16A1ED3400310C4F /* teeter_totter.png */; };
-		50CB205D16A1ED3500310C4F /* teeter_totter_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202B16A1ED3400310C4F /* teeter_totter_grey.png */; };
-		50CB205E16A1ED3500310C4F /* teeter_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202C16A1ED3400310C4F /* teeter_yellow.png */; };
-		50CB205F16A1ED3500310C4F /* teeter_yellow_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 50CB202D16A1ED3400310C4F /* teeter_yellow_grey.png */; };
 		50E2B0F81A702C300054B77A /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E2B0F71A702C300054B77A /* coin.png */; };
 		50E2B0FB1A70311B0054B77A /* CoinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E2B0FA1A70311B0054B77A /* CoinButton.m */; };
 		50E90C9F1719AE5E005D89F5 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E90C9E1719AE5D005D89F5 /* XMLParser.m */; };
 		50E91B4916AAD0C500671D50 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E91B4816AAD0C500671D50 /* Circle.m */; };
 		8653AB0C24BBE9C000CCEE65 /* PropertyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8653AB0B24BBE9C000CCEE65 /* PropertyWindow.m */; };
+		86B0C6C824BFCB7500578795 /* teeter_totter.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B0C6C024BFCB7500578795 /* teeter_totter.png */; };
+		86B0C6D924BFE0DB00578795 /* teeter_totter_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 86B0C6D824BFE0DA00578795 /* teeter_totter_blue.png */; };
 		86C3885224BA89A200416129 /* ColorCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C3885124BA89A200416129 /* ColorCombo.m */; };
+		86E83D4024C126F00084AC1E /* teeter_totter_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 86E83D3F24C126F00084AC1E /* teeter_totter_purple.png */; };
+		86E83D4224C12B010084AC1E /* teeter_totter_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 86E83D4124C12B010084AC1E /* teeter_totter_green.png */; };
+		86E83D4424C12DA20084AC1E /* teeter_totter_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 86E83D4324C12DA10084AC1E /* teeter_totter_red.png */; };
+		86E83D4624C13CDD0084AC1E /* teeter_totter_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 86E83D4524C13CDD0084AC1E /* teeter_totter_yellow.png */; };
+		86E83D4824C141930084AC1E /* teeter_totter_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 86E83D4724C141930084AC1E /* teeter_totter_orange.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,7 +111,6 @@
 		502BB7EE1A7417FC00050CC7 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coin.m; sourceTree = "<group>"; };
 		502BB7F01A741BF600050CC7 /* Coin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coin.h; sourceTree = "<group>"; };
 		502F2CDD191049C8000247EF /* flipper_blue_level_editor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flipper_blue_level_editor.png; sourceTree = "<group>"; };
-		502F2CDF1910A5A6000247EF /* teeter_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_orange.png; sourceTree = "<group>"; };
 		5040D514169A0CBD00ABB956 /* Feed The Mouse Level Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feed The Mouse Level Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5040D518169A0CBD00ABB956 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5040D51B169A0CBD00ABB956 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -208,16 +203,6 @@
 		50CB201F16A1ED3400310C4F /* star_slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_slider.png; sourceTree = "<group>"; };
 		50CB202116A1ED3400310C4F /* star.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = star.mat; sourceTree = "<group>"; };
 		50CB202216A1ED3400310C4F /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		50CB202416A1ED3400310C4F /* teeter_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_blue.png; sourceTree = "<group>"; };
-		50CB202516A1ED3400310C4F /* teeter_blue_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_blue_grey.png; sourceTree = "<group>"; };
-		50CB202616A1ED3400310C4F /* teeter_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_green.png; sourceTree = "<group>"; };
-		50CB202716A1ED3400310C4F /* teeter_green_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_green_grey.png; sourceTree = "<group>"; };
-		50CB202816A1ED3400310C4F /* teeter_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_purple.png; sourceTree = "<group>"; };
-		50CB202916A1ED3400310C4F /* teeter_purple_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_purple_grey.png; sourceTree = "<group>"; };
-		50CB202A16A1ED3400310C4F /* teeter_totter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter.png; sourceTree = "<group>"; };
-		50CB202B16A1ED3400310C4F /* teeter_totter_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_grey.png; sourceTree = "<group>"; };
-		50CB202C16A1ED3400310C4F /* teeter_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_yellow.png; sourceTree = "<group>"; };
-		50CB202D16A1ED3400310C4F /* teeter_yellow_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_yellow_grey.png; sourceTree = "<group>"; };
 		50E2B0F71A702C300054B77A /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
 		50E2B0F91A702DCC0054B77A /* CoinButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinButton.h; sourceTree = "<group>"; };
 		50E2B0FA1A70311B0054B77A /* CoinButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinButton.m; sourceTree = "<group>"; };
@@ -227,9 +212,16 @@
 		50E91B4816AAD0C500671D50 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = "Feed The Mouse Level Editor/Classes/Circle.m"; sourceTree = "<group>"; };
 		8653AB0A24BBE9C000CCEE65 /* PropertyWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyWindow.h; sourceTree = "<group>"; };
 		8653AB0B24BBE9C000CCEE65 /* PropertyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyWindow.m; sourceTree = "<group>"; };
+		86B0C6C024BFCB7500578795 /* teeter_totter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter.png; sourceTree = "<group>"; };
+		86B0C6D824BFE0DA00578795 /* teeter_totter_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_blue.png; sourceTree = "<group>"; };
 		86C3884B24BA867000416129 /* Feed The Mouse Level Editor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Feed The Mouse Level Editor-Bridging-Header.h"; sourceTree = "<group>"; };
 		86C3885024BA89A200416129 /* ColorCombo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorCombo.h; sourceTree = "<group>"; };
 		86C3885124BA89A200416129 /* ColorCombo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCombo.m; sourceTree = "<group>"; };
+		86E83D3F24C126F00084AC1E /* teeter_totter_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_purple.png; sourceTree = "<group>"; };
+		86E83D4124C12B010084AC1E /* teeter_totter_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_green.png; sourceTree = "<group>"; };
+		86E83D4324C12DA10084AC1E /* teeter_totter_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_red.png; sourceTree = "<group>"; };
+		86E83D4524C13CDD0084AC1E /* teeter_totter_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_yellow.png; sourceTree = "<group>"; };
+		86E83D4724C141930084AC1E /* teeter_totter_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teeter_totter_orange.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,17 +495,13 @@
 		50CB202316A1ED3400310C4F /* TeeterTotters */ = {
 			isa = PBXGroup;
 			children = (
-				502F2CDF1910A5A6000247EF /* teeter_orange.png */,
-				50CB202416A1ED3400310C4F /* teeter_blue.png */,
-				50CB202516A1ED3400310C4F /* teeter_blue_grey.png */,
-				50CB202616A1ED3400310C4F /* teeter_green.png */,
-				50CB202716A1ED3400310C4F /* teeter_green_grey.png */,
-				50CB202816A1ED3400310C4F /* teeter_purple.png */,
-				50CB202916A1ED3400310C4F /* teeter_purple_grey.png */,
-				50CB202A16A1ED3400310C4F /* teeter_totter.png */,
-				50CB202B16A1ED3400310C4F /* teeter_totter_grey.png */,
-				50CB202C16A1ED3400310C4F /* teeter_yellow.png */,
-				50CB202D16A1ED3400310C4F /* teeter_yellow_grey.png */,
+				86E83D4724C141930084AC1E /* teeter_totter_orange.png */,
+				86E83D4524C13CDD0084AC1E /* teeter_totter_yellow.png */,
+				86E83D4324C12DA10084AC1E /* teeter_totter_red.png */,
+				86E83D4124C12B010084AC1E /* teeter_totter_green.png */,
+				86E83D3F24C126F00084AC1E /* teeter_totter_purple.png */,
+				86B0C6D824BFE0DA00578795 /* teeter_totter_blue.png */,
+				86B0C6C024BFCB7500578795 /* teeter_totter.png */,
 			);
 			path = TeeterTotters;
 			sourceTree = "<group>";
@@ -602,12 +590,13 @@
 				50BD736F1910AA9200F1EF62 /* flipper_purple_level_editor.png in Resources */,
 				50CB202F16A1ED3500310C4F /* background_2.png in Resources */,
 				50CB203016A1ED3500310C4F /* background_3.png in Resources */,
+				86E83D4224C12B010084AC1E /* teeter_totter_green.png in Resources */,
 				50BD73701910AA9200F1EF62 /* flipper_yellow_level_editor.png in Resources */,
 				50CB203116A1ED3500310C4F /* background_4.png in Resources */,
 				50CB203216A1ED3500310C4F /* cheese.png in Resources */,
-				502F2CE01910A5A6000247EF /* teeter_orange.png in Resources */,
 				50CB203316A1ED3500310C4F /* MouseBlink.png in Resources */,
 				50CB203416A1ED3500310C4F /* MouseChew.png in Resources */,
+				86B0C6C824BFCB7500578795 /* teeter_totter.png in Resources */,
 				50CB203516A1ED3500310C4F /* MouseCloseMouth.PNG in Resources */,
 				50CB203616A1ED3500310C4F /* MouseOpenMouth.png in Resources */,
 				50CB203716A1ED3500310C4F /* MouseSad.png in Resources */,
@@ -622,11 +611,14 @@
 				50CB203D16A1ED3500310C4F /* drum_face_left.png in Resources */,
 				50CB203E16A1ED3500310C4F /* drum_face_right.png in Resources */,
 				50CB203F16A1ED3500310C4F /* drum_flat.png in Resources */,
+				86E83D4424C12DA20084AC1E /* teeter_totter_red.png in Resources */,
 				50CB204016A1ED3500310C4F /* DrumsSheet.PNG in Resources */,
 				50BD736D1910AA9200F1EF62 /* flipper_magenta_level_editor.png in Resources */,
 				50CB204116A1ED3500310C4F /* flipper_blue.png in Resources */,
 				50CB204216A1ED3500310C4F /* flipper_blue_grey.png in Resources */,
 				50CB204316A1ED3500310C4F /* flipper_green.png in Resources */,
+				86E83D4824C141930084AC1E /* teeter_totter_orange.png in Resources */,
+				86E83D4024C126F00084AC1E /* teeter_totter_purple.png in Resources */,
 				50CB204416A1ED3500310C4F /* flipper_green_grey.png in Resources */,
 				50CB204516A1ED3500310C4F /* flipper_purple.png in Resources */,
 				50CB204616A1ED3500310C4F /* flipper_purple_grey.png in Resources */,
@@ -641,21 +633,13 @@
 				50CB204E16A1ED3500310C4F /* small_gear_orange.png in Resources */,
 				50CB204F16A1ED3500310C4F /* small_gear_purple.png in Resources */,
 				50CB205016A1ED3500310C4F /* small_gear_red.png in Resources */,
+				86E83D4624C13CDD0084AC1E /* teeter_totter_yellow.png in Resources */,
 				50CB205116A1ED3500310C4F /* small_star.png in Resources */,
 				50CB205216A1ED3500310C4F /* small_star_flash.png in Resources */,
 				50CB205316A1ED3500310C4F /* star_slider.png in Resources */,
 				50CB205416A1ED3500310C4F /* star.mat in Resources */,
+				86B0C6D924BFE0DB00578795 /* teeter_totter_blue.png in Resources */,
 				50CB205516A1ED3500310C4F /* star.png in Resources */,
-				50CB205616A1ED3500310C4F /* teeter_blue.png in Resources */,
-				50CB205716A1ED3500310C4F /* teeter_blue_grey.png in Resources */,
-				50CB205816A1ED3500310C4F /* teeter_green.png in Resources */,
-				50CB205916A1ED3500310C4F /* teeter_green_grey.png in Resources */,
-				50CB205A16A1ED3500310C4F /* teeter_purple.png in Resources */,
-				50CB205B16A1ED3500310C4F /* teeter_purple_grey.png in Resources */,
-				50CB205C16A1ED3500310C4F /* teeter_totter.png in Resources */,
-				50CB205D16A1ED3500310C4F /* teeter_totter_grey.png in Resources */,
-				50CB205E16A1ED3500310C4F /* teeter_yellow.png in Resources */,
-				50CB205F16A1ED3500310C4F /* teeter_yellow_grey.png in Resources */,
 				505A04B916B41975009915CE /* MyDocument.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -61,14 +61,16 @@
         return @"blue";
     else if (color == [NSColor greenColor])
         return @"green";
-    else if (color == [NSColor magentaColor])
-        return @"magenta";
+    else if (color == [NSColor redColor])
+        return @"red";
     else if (color == [NSColor purpleColor])
         return @"purple";
     else if (color == [NSColor yellowColor])
         return @"yellow";
-    else
+    else if (color == [NSColor orangeColor])
         return @"orange";
+    else if (color == [NSColor grayColor])
+        return @"gray";
 }
 
 - (void) setColor:(NSColor *)value
@@ -78,16 +80,22 @@
 
 - (NSURL*) getURL
 {
-    /*if (color == [NSColor purpleColor])
-        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_purple.png" ofType:nil]];
+    if (color == [NSColor purpleColor])
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter_purple.png" ofType:nil]];
     else if (color == [NSColor orangeColor])
-        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_orange.png" ofType:nil]];
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter_orange.png" ofType:nil]];
     else if (color == [NSColor yellowColor])
-        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_yellow.png" ofType:nil]];
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter_yellow.png" ofType:nil]];
     else if (color == [NSColor greenColor])
-        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_green.png" ofType:nil]];
-    else*/
-    url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter.png" ofType:nil]];
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter_green.png" ofType:nil]];
+    else if (color == [NSColor grayColor])
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter_grey.png" ofType:nil]];
+    else if (color == [NSColor redColor])
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter_red.png" ofType:nil]];
+    else if (color == [NSColor blueColor])
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter_blue.png" ofType:nil]];
+    else
+        url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"teeter_totter.png" ofType:nil]];
     return url;
 }
 

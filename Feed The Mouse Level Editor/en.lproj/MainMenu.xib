@@ -662,7 +662,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="640" height="960"/>
                         <clipView key="contentView" id="ZLQ-nZ-fuN">
                             <rect key="frame" x="1" y="1" width="623" height="943"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="715" customClass="MainWindow">
                                     <rect key="frame" x="0.0" y="0.0" width="640" height="960"/>

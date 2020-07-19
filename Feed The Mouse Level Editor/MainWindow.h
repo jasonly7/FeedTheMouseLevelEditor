@@ -25,9 +25,10 @@
     int iSelectedCoin;
     
     int iSelectedDrum;
-    int iSelectedTotter;
+    
     bool isMouseSelected;
     CGPoint pt;
+    NSPoint mousePt;
     CustomScrollView *scroller;
     NSComboBox *cboLevel;
     NSTextField *lblCoordinates;
@@ -40,8 +41,7 @@
         Level *currentLevel;
         int iSelectedGear;
         int iSelectedFlipper;
-
-    
+        int iSelectedTotter;
 }
 
 //- (IBAction)addLevel:(id)sender;

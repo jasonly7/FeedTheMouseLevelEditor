@@ -236,6 +236,9 @@ typedef enum toolMode
                                                       owner:self userInfo:nil];
         [self addTrackingArea:trackingArea];
         [self.window setAcceptsMouseMovedEvents:true];
+        iSelectedGear = -1;
+        iSelectedTotter = -1;
+        
     }
     
     return self;
@@ -346,6 +349,7 @@ typedef enum toolMode
         [self setImage:gearImage];
         [self setOpacity:1.0];
         if (image) {
+            
             NSRect imageRect;
             imageRect.origin = CGPointMake(0,0);
             imageRect.size = [image size];
@@ -353,12 +357,24 @@ typedef enum toolMode
             printf("gear is at (%d, %d)\n", gear->x, gear->y);
             pt = CGPointMake(gear->x-87, gear->y-87);
             drawingRect.origin = pt;
-
+            if (iSelectedGear > -1)
+            {
+                if (i == iSelectedGear)
+                {
+                    [[NSColor whiteColor] set];
+                    
+                  //  NSRectFill(drawingRect);
+                    [NSBezierPath strokeRect:drawingRect];
+                }
+            }
             [image drawInRect:drawingRect
                      fromRect:imageRect
                     operation:NSCompositeSourceOver
                      fraction:opacity];
+            
         }
+        
+        
         [imageRep release];
         [gearImage release];
         [ciImage release];
@@ -560,10 +576,15 @@ typedef enum toolMode
             
         }
         
+        
         [imageRep release];
         [totterImage release];
         [ciImage release];
     }
+    
+    NSBezierPath *circle = [[NSBezierPath alloc] init];
+    [circle appendBezierPathWithArcWithCenter:mousePt radius:5 startAngle:0 endAngle:360];
+    [circle stroke];
 }
 
 + (NSImage *)rotate:(NSImage *)image byAngle:(int)degrees
@@ -624,9 +645,14 @@ typedef enum toolMode
 {
     NSPoint p = [theEvent locationInWindow];
     printf("before y: %f\n", p.y);
-    p.y += self.bounds.size.height - scroller.frame.size.height + scroller->scrollPosition.y-17;
+    float boundsHeight = self.bounds.size.height;
+    float frameHeight = scroller.frame.size.height;
+    float scrollValue = scroller.verticalScroller.floatValue;
+   
+    p.y += (boundsHeight - frameHeight) * (1-scrollValue);//scroller->scrollPosition.y;// - top;//-17;
 //        p.y += 374+scroller->scrollPosition.y-17;
     printf("after y: %f\n", p.y);
+    mousePt = p;
     Gear *g;
     Drum *d;
     TeeterTotter *t;
@@ -704,7 +730,12 @@ typedef enum toolMode
 - (void)mouseDragged:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
-    p.y += self.bounds.size.height - scroller.frame.size.height-17+scroller->scrollPosition.y;
+    //p.y += self.bounds.size.height - //scroller.frame.size.height-17+scroller->scrollPosition.y;
+    float boundsHeight = self.bounds.size.height;
+     float frameHeight = scroller.frame.size.height;
+     float scrollValue = scroller.verticalScroller.floatValue;
+    
+     p.y += (boundsHeight - frameHeight) * (1-scrollValue);
     if (isMouseSelected)
     {
         mouse->x = p.x;
@@ -764,7 +795,12 @@ typedef enum toolMode
 -(void)mouseUp:(NSEvent *)theEvent
 {
     NSPoint p = [theEvent locationInWindow];
-    p.y += self.bounds.size.height - scroller.frame.size.height - 17+scroller->scrollPosition.y;
+    //p.y += self.bounds.size.height - scroller.frame.size.height - //17+scroller->scrollPosition.y;
+    float boundsHeight = self.bounds.size.height;
+     float frameHeight = scroller.frame.size.height;
+     float scrollValue = scroller.verticalScroller.floatValue;
+    
+     p.y += (boundsHeight - frameHeight) * (1-scrollValue);
     Coin *c;
     Gear *g;
     Drum *d;
@@ -966,6 +1002,11 @@ typedef enum toolMode
     {
         Flipper *f = (Flipper*) [currentLevel->flippers objectAtIndex:iSelectedFlipper];
         [f setColor:cp.color];
+    }
+    else if (iSelectedTotter!=-1)
+    {
+        TeeterTotter *t = (TeeterTotter*) [currentLevel->teeterTotters objectAtIndex:iSelectedTotter];
+        [t setColor:cp.color];
     }
     [self setNeedsDisplay:YES];
 }
