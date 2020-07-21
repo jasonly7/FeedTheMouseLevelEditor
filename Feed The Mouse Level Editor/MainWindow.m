@@ -238,7 +238,9 @@ typedef enum toolMode
         [self.window setAcceptsMouseMovedEvents:true];
         iSelectedGear = -1;
         iSelectedTotter = -1;
-        
+        iSelectedFlipper = -1;
+        iSelectedDrum = -1;
+        iSelectedCoin = -1;
     }
     
     return self;
@@ -362,8 +364,6 @@ typedef enum toolMode
                 if (i == iSelectedGear)
                 {
                     [[NSColor whiteColor] set];
-                    
-                  //  NSRectFill(drawingRect);
                     [NSBezierPath strokeRect:drawingRect];
                 }
             }
@@ -400,7 +400,14 @@ typedef enum toolMode
             printf("coin is at (%d, %d)\n", coin->x, coin->y);
             pt = CGPointMake(coin->x - [coin getRadius] , coin->y - [coin getRadius]);
             drawingRect.origin = pt;
-            
+            if (iSelectedCoin > -1)
+            {
+                if (i == iSelectedCoin)
+                {
+                    [[NSColor whiteColor] set];
+                    [NSBezierPath strokeRect:drawingRect];
+                }
+            }
             [image drawInRect:drawingRect
                      fromRect:imageRect
                     operation:NSCompositeSourceOver
@@ -437,6 +444,18 @@ typedef enum toolMode
             drawingRect.origin = pt;
             drawingRect.size.height = 400;
             drawingRect.size.width = 400;
+            if (iSelectedDrum > -1)
+            {
+                if (i == iSelectedDrum)
+                {
+                    [[NSColor whiteColor] set];
+                    NSRect newRect;
+                    newRect = drawingRect;
+                    newRect.size.width = 200;
+                    newRect.size.height = 200;
+                    [NSBezierPath strokeRect:newRect];
+                }
+            }
             [newImage lockFocus];
             /**
              * Apply the following transformations:
@@ -455,6 +474,7 @@ typedef enum toolMode
             [image drawAtPoint:NSZeroPoint fromRect:NSMakeRect(0, 0,image.size.width,image.size.height) operation:NSCompositeCopy fraction:1];
             
             [newImage unlockFocus];
+            
             [newImage drawInRect:drawingRect
                      fromRect:imageRect
                     operation:NSCompositeSourceOver
@@ -491,6 +511,19 @@ typedef enum toolMode
             drawingRect.origin = pt;
             drawingRect.size.height = 336;
             drawingRect.size.width = 336;
+            
+            if (iSelectedFlipper > -1)
+            {
+                if (i == iSelectedFlipper)
+                {
+                    [[NSColor whiteColor] set];
+                    NSRect newRect;
+                    newRect = drawingRect;
+                    newRect.size.width = 168;
+                    newRect.size.height = 168;
+                    [NSBezierPath strokeRect:newRect];
+                }
+            }
             [newImage lockFocus];
             /**
              * Apply the following transformations:
@@ -552,6 +585,18 @@ typedef enum toolMode
             drawingRect.origin = pt;
             drawingRect.size.height = 296;
             drawingRect.size.width = 296;
+            if (iSelectedTotter > -1)
+            {
+                if (i == iSelectedTotter)
+                {
+                    [[NSColor whiteColor] set];
+                    NSRect newRect;
+                    newRect = drawingRect;
+                    newRect.size.width = 148;
+                    newRect.size.height = 148;
+                    [NSBezierPath strokeRect:newRect];
+                }
+            }
             [newImage lockFocus];
             /**
              * Apply the following transformations:
